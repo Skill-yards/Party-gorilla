@@ -1,0 +1,77 @@
+import './Home.css'
+import { Link } from 'react-router-dom'
+import Events from './Event'
+import Service from './Service'
+import WhatsAppCTA from '../components/WhatsAppCTA'
+const features = [
+  { icon: 'ri-body-scan-line', text: 'Fun & interactive performance' },
+  { icon: 'ri-suitcase-line', text: 'Perfect for all types of events' },
+  { icon: 'ri-shield-check-line', text: 'Safe and reliable' },
+  { icon: 'ri-user-heart-line', text: 'Perfect for everyone' },
+]
+
+const Home = () => {
+
+  return (
+    <>
+      
+      <section className="hm-hero" id="about">
+        <div className="hm-hero-text">
+          <div className="hm-badge">
+            <span className="hm-crown">
+              <i className="ri-vip-crown-fill"></i>
+            </span>
+            Enjoy the party and booking now
+          </div>
+
+          <h2>create unforgettable memories</h2>
+          <h1>Gorila Dance Vibe</h1>
+
+          <p className="hm-desc">
+            Make your parties, events and celebrations extra special with our
+            fun, interactive and high-energy gorilla mascot!
+          </p>
+
+          <div className="hm-btns">
+            <WhatsAppCTA className='hm-btn-line h-[60px] '></WhatsAppCTA>
+            <Link to="/package" className="hm-btn hm-btn-line">
+              View package <i className="ri-suitcase-line"></i>
+            </Link>
+          </div>
+        </div>
+
+        <div className="hm-hero-img">
+          <div className="hm-cards">
+            <img src="imagenine.webp" alt="Gorila mascot at a party" className="hm-c1" />
+            <img src="imageseven.webp" alt="Gorila mascot dancing" className="hm-c2" />
+            <img src="imageeight.webp" alt="Gorila mascot with kids" className="hm-c3" />
+          </div>
+        </div>
+      </section>
+
+      <section className="hm-strip">
+        <div className="hm-track">
+          {[0, 1].map((set) => (
+            <div className="hm-group" key={set} aria-hidden={set === 1}>
+              {features.map((f) => (
+                <div className="hm-feat" key={`${set}-${f.text}`}>
+                  <i className={f.icon}></i>
+                  <p>{f.text}</p>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </section>
+
+
+      <Events/>
+
+      <Service/>
+
+   
+    </>
+  )
+}
+
+export default Home

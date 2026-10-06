@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #17352c;
+  --color-primary-dark: #14231f;
+
+   --color-secondary: #292929;
+   --color-secondary-hover: #1f1f1f;
+
+  --color-accent: #ffd42a;
+  --color-accent-hover: #f5c800;
+
+  --color-background: #f3f0e7;
+  --color-surface: #ffffff;
+
+  --color-text: #171717;
+  --color-text-muted: #00000099;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-border: #0000001a;
+
+  --color-success-soft: #e9f0e9;
+
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gallery-button-pulse {
+  0%,
+  100% {
+    box-shadow: 0 8px 25px rgb(0, 0, 0);
+  }
+
+  50% {
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.332);
+  }
+}
+
+.gallery-button-pulse {
+  animation: gallery-button-pulse 2.2s ease-in-out infinite;
+}

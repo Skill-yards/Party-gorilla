@@ -1,0 +1,582 @@
+:root {
+    --color-primary: #17352c;
+    --color-primary-dark: #14231f;
+
+    --color-secondary: #292929;
+    --color-secondary-hover: #1f1f1f;
+
+    --color-accent: #ffd42a;
+    --color-accent-hover: #f5c800;
+
+    --color-background: #f3f0e7;
+    --color-surface: #ffffff;
+
+    --color-text: #171717;
+    --color-text-muted: #00000099;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    --color-border: #0000001a;
+
+    --color-success-soft: #e9f0e9;
+
+    --shadow-soft: 0 8px 30px #0000000f;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+html {
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 80px; */
+}
+
+
+
+
+
+/* ============================== NAV BAR ============================== */
+
+.hm-nav-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    width: 100%;
+    background: var(--color-primary);
+    border-bottom: 1px solid #ffffff14;
+    box-shadow: 0 10px 30px #14231f40;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hm-nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 12px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hm-lg {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
+}
+
+.hm-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-accent);
+}
+
+.hm-lg-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.hm-dj {
+    color: var(--color-accent);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hm-gorila {
+    color: var(--color-white);
+    letter-spacing: 0.5px;
+}
+
+.hm-links {
+    list-style: none;
+    display: flex;
+    gap: 38px;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+.hm-links a {
+    position: relative;
+    padding: 6px 0;
+    color: #ffffffcc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.hm-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.hm-links a:hover {
+    color: var(--color-white);
+}
+
+.hm-links a:hover::after {
+    width: 100%;
+}
+
+.hm-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hm-wa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    background: var(--color-accent);
+    color: var(--color-black);
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+.hm-wa i {
+    font-size: 22px;
+}
+
+.hm-wa:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #ffd42a55;
+}
+
+.hm-burger {
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff33;
+    border-radius: 12px;
+    background: #ffffff14;
+    color: var(--color-white);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ============================== HERO ============================== */
+
+.hm-hero {
+    width: 100%;
+    padding: 80px 100px 70px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    overflow: hidden;
+    background: var(--color-background);
+}
+
+.hm-hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hm-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 18px 5px 5px;
+    border: 1px solid var(--color-border);
+    border-radius: 50px;
+    background: var(--color-surface);
+    box-shadow: var(--shadow-soft);
+    color: var(--color-primary);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.hm-crown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-size: 13px;
+}
+
+.hm-hero-text h2 {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--color-primary);
+    font-family: system-ui, sans-serif;
+    font-size: clamp(14px, 1.8vw, 19px);
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hm-hero-text h2::before {
+    content: '';
+    width: 44px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--color-accent);
+}
+
+.hm-hero-text h1 {
+    margin-top: 14px;
+    color: var(--color-primary);
+    font-family: system-ui, sans-serif;
+    font-size: clamp(40px, 6.2vw, 78px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.hm-desc {
+    margin-top: 26px;
+    max-width: 520px;
+    color: var(--color-text-muted);
+    font-family: sans-serif;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.hm-btns {
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.hm-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.hm-btn-main {
+    background: var(--color-accent);
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.hm-btn-main:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px #ffd42a66;
+}
+
+.hm-btn-line {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.hm-btn-line:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px #17352c40;
+}
+
+/* ---------- Hero image cards ---------- */
+
+.hm-hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hm-cards {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 520 / 500;
+}
+
+.hm-cards img {
+    position: absolute;
+    object-fit: cover;
+    border: 5px solid var(--color-white);
+    border-radius: 22px;
+    box-shadow: 0 20px 40px #14231f55;
+    transform: rotate(var(--r, 0deg));
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hm-cards img:hover {
+    z-index: 5;
+    transform: rotate(0deg) translateY(-10px) scale(1.03);
+    border-color: var(--color-accent);
+}
+
+.hm-c1 {
+    --r: -7deg;
+    left: 3%;
+    top: 16%;
+    width: 41%;
+    height: 72%;
+    z-index: 1;
+}
+
+.hm-c2 {
+    left: 29.5%;
+    top: 3%;
+    width: 41%;
+    height: 86%;
+    z-index: 3;
+}
+
+.hm-c3 {
+    --r: 7deg;
+    right: 3%;
+    top: 18%;
+    width: 41%;
+    height: 72%;
+    z-index: 2;
+}
+
+/* ============================== FEATURES STRIP ============================== */
+
+.hm-strip {
+    width: 100%;
+    padding: 10px 0 80px;
+    overflow: hidden;
+    background: var(--color-background);
+}
+
+.hm-track {
+    display: flex;
+    width: max-content;
+    animation: hmMove 30s linear infinite;
+}
+
+.hm-track:hover {
+    animation-play-state: paused;
+}
+
+.hm-group {
+    display: flex;
+    gap: 22px;
+    padding-right: 22px;
+}
+
+.hm-feat {
+    flex: 0 0 290px;
+    height: 160px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 22px;
+    background: var(--color-surface);
+    box-shadow: var(--shadow-soft);
+    transition: 0.25s ease;
+}
+
+.hm-feat:hover {
+    transform: translateY(-6px);
+    border-color: var(--color-accent);
+    box-shadow: 0 14px 34px #17352c26;
+}
+
+.hm-feat i {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: var(--color-accent);
+    font-size: 26px;
+}
+
+.hm-feat p {
+    color: var(--color-text);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+    text-align: center;
+}
+
+/* 4 groups hain, isliye ek group ki width = 25% par loop reset hota hai */
+@keyframes hmMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-25%);
+    }
+}
+
+/* ============================== RESPONSIVE ============================== */
+
+@media (max-width: 1000px) {
+    .hm-nav {
+        padding: 12px 30px;
+    }
+
+    .hm-burger {
+        display: flex;
+    }
+
+    /* mobile menu panel */
+    .hm-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 6px;
+        padding: 14px 30px 24px;
+        background: var(--color-primary-dark);
+        border-bottom: 1px solid #ffffff14;
+        box-shadow: 0 20px 30px #14231f55;
+    }
+
+    .hm-links.hm-open {
+        display: flex;
+        animation: hmDrop 0.25s ease;
+    }
+
+    .hm-links a {
+        display: inline-block;
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .hm-hero {
+        flex-direction: column;
+        padding: 50px 40px 60px;
+        gap: 60px;
+    }
+
+    .hm-hero-text,
+    .hm-hero-img {
+        width: 100%;
+    }
+
+    .hm-cards {
+        max-width: 480px;
+    }
+}
+
+@keyframes hmDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        scroll-padding-top: 70px;
+    }
+
+    .hm-nav {
+        padding: 10px 16px;
+    }
+
+    .hm-links {
+        padding: 14px 16px 22px;
+    }
+
+    .hm-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hm-dj {
+        font-size: 17px;
+    }
+
+    /* whatsapp sirf icon */
+    .hm-wa {
+        padding: 9px 13px;
+    }
+
+    .hm-wa span {
+        display: none;
+    }
+
+    .hm-hero {
+        padding: 36px 20px 50px;
+        gap: 50px;
+    }
+
+    .hm-desc {
+        font-size: 17px;
+    }
+
+    .hm-btns {
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .hm-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hm-feat {
+        flex-basis: 250px;
+        height: 150px;
+    }
+
+    .hm-feat p {
+        font-size: 17px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hm-track {
+        animation: none;
+    }
+
+    .hm-strip {
+        overflow-x: auto;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}

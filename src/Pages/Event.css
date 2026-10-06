@@ -1,0 +1,223 @@
+.ev-section {
+    width: 100%;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background: var(--color-primary);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ---------- Heading ---------- */
+
+.ev-head {
+    text-align: center;
+}
+
+.ev-head h2 {
+    color: var(--color-white);
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.ev-head p {
+    margin-top: 12px;
+    color: #ffffffb3;
+    font-size: 18px;
+}
+
+.ev-head::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 24px auto 0;
+    border-radius: 4px;
+    background: var(--color-accent);
+}
+
+/* ---------- Rows (column direction) ---------- */
+
+.ev-list {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.ev-row {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* birthday row: content right, video left */
+.ev-reverse {
+    flex-direction: row-reverse;
+}
+
+/* ---------- Content side ---------- */
+
+.ev-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ev-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px 6px 6px;
+    border: 1px solid #ffffff26;
+    border-radius: 50px;
+    background: #ffffff12;
+    color: var(--color-accent);
+    font-size: 15px;
+}
+
+.ev-tag i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-size: 14px;
+}
+
+.ev-content h3 {
+    margin-top: 22px;
+    color: var(--color-white);
+    font-family: system-ui, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.ev-text {
+    margin-top: 18px;
+    max-width: 480px;
+    color: #ffffffb3;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.ev-points {
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ev-points li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-white);
+    font-size: 17px;
+}
+
+.ev-points i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+    color: var(--color-accent);
+    font-size: 14px;
+}
+
+.ev-btn {
+    margin-top: 34px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 30px;
+    border-radius: 50px;
+    background: var(--color-accent);
+    color: var(--color-black);
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.ev-btn:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 26px #ffd42a55;
+}
+
+/* ---------- Video side ---------- */
+
+.ev-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.ev-frame {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    aspect-ratio: 16 / 9;
+    padding: 4px;
+    border-radius: 24px;
+    background: var(--color-accent);
+    box-shadow: 0 25px 50px #14231f99;
+    transition: 0.3s ease;
+}
+
+.ev-frame:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px #14231fcc, 0 0 0 6px #ffd42a33;
+}
+
+.ev-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 20px;
+    background: var(--color-black);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1000px) {
+    .ev-section {
+        padding: 80px 40px;
+    }
+
+    .ev-row,
+    .ev-reverse {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .ev-content,
+    .ev-video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .ev-section {
+        padding: 60px 20px;
+    }
+
+    .ev-head h2 {
+        font-size: 30px;
+    }
+
+    .ev-content h3 {
+        font-size: 28px;
+    }
+}
