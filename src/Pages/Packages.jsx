@@ -1,6 +1,4 @@
-
 import {useInView} from 'react-intersection-observer';
-
 
 import WhatsAppCTA from "../components/WhatsAppCTA";
 import CallCTA from "../components/CallCTA";
@@ -243,9 +241,11 @@ const Packages = () => {
           lg:leading-7
         "
       >
-        Bring unforgettable energy to your celebration with our
-        entertaining gorilla appearances, interactive games and
-        memorable moments.
+        Book a gorilla for your party in Agra and turn birthdays, 
+        weddings and celebrations into unforgettable moments. 
+        Enjoy fun gorilla entertainment, interactive games and lively party vibes,
+         with DJ and lighting options to complete the celebration.
+
       </p>
 
       {/* Buttons */}

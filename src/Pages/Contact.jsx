@@ -31,8 +31,8 @@ const contactDetails = [
   {
     id: 3,
     icon: FaMapMarkerAlt,
-    title: "Serving Across India",
-    subtitle: "(Events & Parties)",
+    title: " Nandlalpur, Tedi Baghiya, Tedi Bagiya, Agra, Uttar Pradesh 282006",
+    subtitle: "(Birthdays, weddings & party events)",
   },
 ];
 
@@ -179,8 +179,7 @@ ${formData.message || "No additional message."}
                 sm:leading-7
               "
             >
-              Have a question, want to know more about our packages,
-              or need a custom quote? We're just a message away!
+             Planning a birthday, wedding or party in Agra? Tell us about your event and we'll help you with the perfect gorilla entertainment, DJ and lighting setup. Questions, packages or a custom quote, we're just a message away!
             </p>
 
             <div

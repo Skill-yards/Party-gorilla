@@ -305,7 +305,7 @@
     gap: 10px;
     font-family: sans-serif;
     font-size: 15px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .ft-col li i {

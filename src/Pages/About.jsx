@@ -20,7 +20,7 @@ const pastEvents = [
     src: 'image14.webp',
     poster: "",
     title: "Birthday Celebration",
-    location: "Delhi",
+    
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const pastEvents = [
     src: 'image10.webp',
     poster: "",
     title: "Kids Party",
-    location: "Noida",
+    
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const pastEvents = [
     src: 'image19.webp',
     poster: "",
     title: "Mehandi Celebration",
-    location: "Gurugram",
+   
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const pastEvents = [
     src: 'image11.webp',
     poster: "",
     title: "Gorilla Vibes In Action",
-    location: "Delhi",
+    
   },
 ];
 
@@ -59,7 +59,7 @@ const reasons = [
     number: "01",
     title: "High-Energy Entertainment",
     description:
-      "Our gorilla appearances bring instant energy, laughter and excitement to your celebration.",
+      "Our party gorilla brings instant energy, laughter and excitement to birthdays, weddings and celebrations in Agra.",
   },
   {
     id: 2,
@@ -73,14 +73,14 @@ const reasons = [
     number: "03",
     title: "Made For Your Event",
     description:
-      "Every celebration is different, so our entertainment is designed to fit your occasion and audience.",
+      "Every celebration is different, so we shape our gorilla, mascot, DJ and lighting entertainment around your occasion and audience.",
   },
   {
     id: 4,
     number: "04",
-    title: "Professional Experience",
+    title: "Professional Approach",
     description:
-      "We focus on energetic performances, guest interaction and making your event run smoothly.",
+      "We focus on energetic performances, guest interaction and keeping your event running smoothly",
   },
 ];
 
@@ -171,7 +171,7 @@ const About = () => {
                 sm:text-xs
               "
             >
-              ABOUT GORILLA VIBES
+              ABOUT GORILLA VIBES . AGRA
             </p>
 
             <h1
@@ -204,9 +204,7 @@ const About = () => {
                 sm:leading-7
               "
             >
-              Gorilla Vibes is all about turning ordinary celebrations into
-              unforgettable experiences with energy, laughter, entertainment
-              and plenty of crazy moments.
+              Gorilla Vibes turns ordinary celebrations in Agra into unforgettable ones. Our party gorilla, fun mascots like Motu Patlu, and DJ and lighting setups bring the energy, laughter and crazy moments your guests will talk about.
             </p>
 
             <div
@@ -303,7 +301,7 @@ const About = () => {
 
             <img
               src='imagenine.webp'
-              alt="Gorilla Vibes performer"
+              alt="Fun party mascots for birthday parties and celebrations in Agra"
               className="
                 relative
                 z-10
@@ -378,8 +376,7 @@ const About = () => {
                 text-[var(--color-text-muted)]
               "
             >
-              We created Gorilla Vibes with one simple idea: celebrations
-              should feel exciting, unexpected and impossible to forget.
+             We started Gorilla Vibes in Agra with one simple idea: celebrations should feel exciting, unexpected and impossible to forget.
             </p>
 
             <p
@@ -390,17 +387,15 @@ const About = () => {
                 text-[var(--color-text-muted)]
               "
             >
-              Whether it's a birthday party, family celebration or a special
-              event, our gorilla appearances are designed to get people
-              smiling, laughing, dancing and creating memories together.
+              Whether it's a birthday party, a wedding or a family celebration, our party gorilla and mascot appearances are designed to get people smiling, laughing, dancing and creating memories together.
             </p>
 
             <div className="mt-7 space-y-4">
 
               {[
                 "Fun for kids and adults",
-                "Interactive entertainment",
-                "Memorable photo opportunities",
+                "Interactive party entertainment",
+                " Photo moments everyone remembers",
               ].map((item) => (
                 <div
                   key={item}
@@ -791,17 +786,6 @@ const About = () => {
                 >
                   {event.title}
                 </h3>
-
-                <p
-                  className="
-                    mt-1
-                    text-[10px]
-                    font-medium
-                    text-[var(--color-text-muted)]
-                  "
-                >
-                  {event.location}
-                </p>
 
               </div>
 
