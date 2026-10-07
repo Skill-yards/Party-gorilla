@@ -2,7 +2,9 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import Events from './Event'
 import Service from './Service'
-import WhatsAppCTA from '../components/WhatsAppCTA'
+// import WhatsAppCTA from '../components/WhatsAppCTA'
+import { FaWhatsapp } from "react-icons/fa";
+import { phoneNumber } from "../Contact_details.js";
 const features = [
   { icon: 'ri-body-scan-line', text: 'Fun & interactive performance' },
   { icon: 'ri-suitcase-line', text: 'Perfect for all types of events' },
@@ -11,6 +13,13 @@ const features = [
 ]
 
 const Home = () => {
+
+    const message =
+    "Hi! I would like to know more about your services.";
+
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
   return (
     <>
@@ -33,7 +42,22 @@ const Home = () => {
           </p>
 
           <div className="hm-btns">
-            <WhatsAppCTA className='hm-btn-line h-[60px] '></WhatsAppCTA>
+             <a className="  bg-[#FFD42A] text-[#111] hover:bg-amber-500 hm-btn hm-btn-line"
+                          href={whatsappURL}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          
+                        >
+                          <FaWhatsapp className="text-[17px]" />
+            
+                          <span className=" sm:inline">
+                            WhatsApp Us
+                          </span>
+                        </a>
+
+
+
+
             <Link to="/package" className="hm-btn hm-btn-line">
               View package <i className="ri-suitcase-line"></i>
             </Link>

@@ -509,7 +509,7 @@ const Packages = () => {
           "
         >
           <img
-            src='https://placehold.co/80x80/FFD42A/14231F?text=GV'
+            src='imagesix.webp'
             alt="Gorilla Vibes logo"
             className="h-full w-full object-cover"
           />
