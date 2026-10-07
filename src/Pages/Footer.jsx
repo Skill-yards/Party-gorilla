@@ -1,3 +1,8 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
+
 import './Packages.css'
 import { Link } from 'react-router-dom'
 const Footer = () => {
@@ -7,10 +12,10 @@ const Footer = () => {
       )}`;
 
     const quickLinks = [
-        { name: 'home', to: '/home' },
-        { name: 'about', to: '/about' },
-        { name: 'package', to: '/package' },
-        { name: 'contact', to: '/contact' },
+        { name: 'Home', to: '/home' },
+        { name: 'About', to: '/about' },
+        { name: 'Package', to: '/package' },
+        { name: 'Contact', to: '/contact' },
     ]
 
     const payments = [
@@ -26,7 +31,7 @@ const Footer = () => {
                   {/* Brand */}
                   <div className="ft-col ft-brand">
                       <div className="ft-logo">
-                          <img src="imagesix.webp" alt="DJ Gorila" />
+                          <img src="logo.webp" alt="DJ Gorila" />
                           <span>
                               <b>DJ</b> Gorila
                           </span>
@@ -60,7 +65,7 @@ const Footer = () => {
                           <li><i className="ri-phone-fill"></i> +91 6397713425</li>
                           <li><i className="ri-whatsapp-fill"></i> +91 6397713425</li>
                           <li><i className="ri-mail-fill"></i> a62711070@gmail.com</li>
-                          <li><i className="ri-map-pin-2-fill"></i> Agra, UP</li>
+                          <li><i className="ri-map-pin-2-fill"></i> Nandlalpur, Tedi Baghiya, Tedi Bagiya, Agra, Uttar Pradesh 282006</li>
                       </ul>
                   </div>
 

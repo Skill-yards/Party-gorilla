@@ -1,11 +1,14 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
 
 import {useInView} from 'react-intersection-observer';
-
 
 import WhatsAppCTA from "../components/WhatsAppCTA";
 import CallCTA from "../components/CallCTA";
 
-import heroImage from "../assets/packages-hero.jpg";
+import heroImage from "../assets/gorilla_dj_package.webp";
 
 
 const packages = [
@@ -243,9 +246,11 @@ const Packages = () => {
           lg:leading-7
         "
       >
-        Bring unforgettable energy to your celebration with our
-        entertaining gorilla appearances, interactive games and
-        memorable moments.
+        Book a gorilla for your party in Agra and turn birthdays, 
+        weddings and celebrations into unforgettable moments. 
+        Enjoy fun gorilla entertainment, interactive games and lively party vibes,
+         with DJ and lighting options to complete the celebration.
+
       </p>
 
       {/* Buttons */}
@@ -509,7 +514,7 @@ const Packages = () => {
           "
         >
           <img
-            src='https://placehold.co/80x80/FFD42A/14231F?text=GV'
+            src='logo.webp'
             alt="Gorilla Vibes logo"
             className="h-full w-full object-cover"
           />

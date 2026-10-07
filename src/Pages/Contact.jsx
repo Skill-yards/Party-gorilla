@@ -1,4 +1,10 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
+
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import {
   FaWhatsapp,
   FaEnvelope,
@@ -11,7 +17,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import WhatsAppCTA from "../components/WhatsAppCTA";
 import CallCTA from "../components/CallCTA";
-import contactImage from "../assets/contact_page_gorilla.png";
+import contactImage from "../assets/cool_gorilla.webp";
 import { phoneNumber } from "../Contact_details.js";
 import { email } from "../Contact_details.js";
 
@@ -31,8 +37,8 @@ const contactDetails = [
   {
     id: 3,
     icon: FaMapMarkerAlt,
-    title: "Serving Across India",
-    subtitle: "(Events & Parties)",
+    title: " Nandlalpur, Tedi Baghiya, Tedi Bagiya, Agra, Uttar Pradesh 282006",
+    subtitle: "(Birthdays, weddings & party events)",
   },
 ];
 
@@ -108,10 +114,16 @@ ${formData.message || "No additional message."}
     window.open(whatsappURL, "_blank");
   };
 
+    const {ref, inView} =  useInView({
+    triggerOnce: true,
+    threshold: 0.01
+  })
+
   return (
     <main
+      ref={ref}
       id="contact"
-      className="bg-[var(--color-background)] text-[var(--color-text)]"
+      className={`bg-[var(--color-background)] text-[var(--color-text)] ${inView ? "animate__animated animate__fadeInUp" : ""} `}
     >
       {/* =====================================================
           CONTACT HERO
@@ -179,8 +191,7 @@ ${formData.message || "No additional message."}
                 sm:leading-7
               "
             >
-              Have a question, want to know more about our packages,
-              or need a custom quote? We're just a message away!
+             Planning a birthday, wedding or party in Agra? Tell us about your event and we'll help you with the perfect gorilla entertainment, DJ and lighting setup. Questions, packages or a custom quote, we're just a message away!
             </p>
 
             <div
