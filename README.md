@@ -21,6 +21,7 @@ The website showcases gorilla entertainment, event services, decorations, DJ sou
 - 📞 Direct call-to-action button
 - 📝 Contact form
 - 🧭 Responsive navigation bar
+
 - ✨ Scroll-based animations
 - 🎨 Centralized CSS color variables
 - ♻️ Reusable React components
