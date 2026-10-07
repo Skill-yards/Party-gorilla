@@ -31,8 +31,9 @@ const Footer = () => {
           <div className="ft-col ft-brand">
             <div className="ft-logo">
               <img src="logo.webp" alt="DJ Gorila" />
-              <span>
-                <b>DJ</b> Gorila
+              <span style={{textTransform:'uppercase'}}>
+                <b> aryan Abhishek </b><br/>
+                 Dj & lighting
               </span>
             </div>
             <p>
