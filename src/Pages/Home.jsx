@@ -6,7 +6,7 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import Events from './Event'
 import Service from './Service'
-// import WhatsAppCTA from '../components/WhatsAppCTA'
+// import WhatsAppCTA from '../Components/WhatsAppCTA'
 import { FaWhatsapp } from "react-icons/fa";
 import { phoneNumber } from "../Contact_details.js";
 const features = [

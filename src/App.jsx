@@ -13,7 +13,7 @@ import Packages from "./Pages/Packages";
 import Contact from "./Pages/Contact";
 import Gallery from "./Pages/Gallery";
 import Footer from "./Pages/Footer";
-import ErrorBoundary from "./components/ErrorBoundary";
+import ErrorBoundary from "./Components/ErrorBoundary";
 import NotFound from "./Pages/NotFound";
 function App() {
   return (

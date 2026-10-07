@@ -12,8 +12,8 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import WhatsAppCTA from "../components/WhatsAppCTA";
-import CallCTA from "../components/CallCTA";
+import WhatsAppCTA from "../Components/WhatsAppCTA";
+import CallCTA from "../Components/CallCTA";
 
 
 const galleryItems = [
