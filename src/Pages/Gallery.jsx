@@ -1,3 +1,7 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
 import { useEffect, useState } from "react";
 import {
   FaArrowLeft,

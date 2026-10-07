@@ -1,5 +1,8 @@
-import './Event.css'
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
 
+
+import './Event.css'
 
 const events = [
     {
