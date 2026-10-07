@@ -1,3 +1,8 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
+
 import './Packages.css'
 import { Link } from 'react-router-dom'
 const Footer = () => {
@@ -26,7 +31,7 @@ const Footer = () => {
                   {/* Brand */}
                   <div className="ft-col ft-brand">
                       <div className="ft-logo">
-                          <img src="imagesix.webp" alt="DJ Gorila" />
+                          <img src="logo.webp" alt="DJ Gorila" />
                           <span>
                               <b>DJ</b> Gorila
                           </span>

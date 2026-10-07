@@ -1,3 +1,8 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
+
 import './Packages.css'
 
 const services = [

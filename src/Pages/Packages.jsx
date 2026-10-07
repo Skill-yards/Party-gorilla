@@ -1,9 +1,14 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
+
 import {useInView} from 'react-intersection-observer';
 
 import WhatsAppCTA from "../components/WhatsAppCTA";
 import CallCTA from "../components/CallCTA";
 
-import heroImage from "../assets/packages-hero.jpg";
+import heroImage from "../assets/gorilla_dj_package.webp";
 
 
 const packages = [
@@ -509,7 +514,7 @@ const Packages = () => {
           "
         >
           <img
-            src='imagesix.webp'
+            src='logo.webp'
             alt="Gorilla Vibes logo"
             className="h-full w-full object-cover"
           />

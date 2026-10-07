@@ -1,4 +1,10 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
+
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import {
   FaWhatsapp,
   FaEnvelope,
@@ -11,7 +17,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import WhatsAppCTA from "../components/WhatsAppCTA";
 import CallCTA from "../components/CallCTA";
-import contactImage from "../assets/contact_page_gorilla.png";
+import contactImage from "../assets/cool_gorilla.webp";
 import { phoneNumber } from "../Contact_details.js";
 import { email } from "../Contact_details.js";
 
@@ -108,10 +114,16 @@ ${formData.message || "No additional message."}
     window.open(whatsappURL, "_blank");
   };
 
+    const {ref, inView} =  useInView({
+    triggerOnce: true,
+    threshold: 0.01
+  })
+
   return (
     <main
+      ref={ref}
       id="contact"
-      className="bg-[var(--color-background)] text-[var(--color-text)]"
+      className={`bg-[var(--color-background)] text-[var(--color-text)] ${inView ? "animate__animated animate__fadeInUp" : ""} `}
     >
       {/* =====================================================
           CONTACT HERO

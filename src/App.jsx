@@ -1,17 +1,6 @@
-// // import Packages from "./Pages/Packages";
-// // import Contact from "./Pages/Contact";
-// import About from "./Pages/About";
-// const App = () => {
-//   return (
-//     <div>
-//      {/* <Packages/>
-//      <Contact/> */}
-//      <About/>
-//     </div>
-//   );
-// }
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
 
-// export default App;
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";

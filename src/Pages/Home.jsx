@@ -1,3 +1,7 @@
+// © 2026 DJ_Gorilla
+// Developed by Akash Kumar and Vijay Kumar
+
+
 import './Home.css'
 import { Link } from 'react-router-dom'
 import Events from './Event'
