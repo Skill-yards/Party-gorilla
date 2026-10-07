@@ -45,7 +45,7 @@ const packages = [
     id: 5,
     name: "DJ Sound – 8 Box",
     price: "₹10,000",
-    image:heroImage,
+    image:'image23.webp',
     description: "Powerful DJ sound setup to keep your celebration going.",
   },
   {
@@ -53,7 +53,7 @@ const packages = [
     name: "Girls for Flower Showering",
     price: "₹2,000",
     detail: "Per Girl",
-    image:heroImage,
+    image:'image26.webp',
     description: "Make your special entrance and celebration even more memorable.",
   },
   {
@@ -67,7 +67,7 @@ const packages = [
     id: 8,
     name: "Tent – 15 × 15 Feet",
     price: "₹4,000",
-    image:heroImage,
+    image:'image24.webp',
     description: "15 × 15 feet tent setup for your event and celebration.",
   },
   {
@@ -75,7 +75,7 @@ const packages = [
     name: "Coffee Machine",
     price: "₹2,500",
     detail: "With Labour",
-    image:heroImage,
+    image:'image25.webp',
     description: "Coffee machine setup with labour for your event.",
   },
 ];

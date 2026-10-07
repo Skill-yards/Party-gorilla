@@ -5,7 +5,7 @@
 import { FaArrowRight, FaCheck, FaPlay } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import WhatsAppCTA from "../components/WhatsAppCTA";
-import CallCTA from "../components/CallCTA";
+import CallCTA from "../Components/CallCTA";
 
 import aboutHero from "../assets/cool_gorilla.webp";
 

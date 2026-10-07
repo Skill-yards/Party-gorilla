@@ -27,22 +27,27 @@ const Home = () => {
 
   return (
     <>
-      
+      <header className='subHeader'>
+          <span className='mobIl'>
+          <p>+91 6397713425</p>
+          </span>
+          <span className='add'>
+          <p>Address: Nandlalpur, Tedi Baghiya, Tedi Bagiya, Agra, Uttar Pradesh 282006</p>
+          </span>
+      </header>
       <section className="hm-hero" id="about">
         <div className="hm-hero-text">
           <div className="hm-badge">
             <span className="hm-crown">
               <i className="ri-vip-crown-fill"></i>
             </span>
-            Enjoy the party and booking now
-          </div>
+              Book your party gorilla in Agra          </div>
 
           <h2>create unforgettable memories</h2>
-          <h1>Gorila Dance Vibe</h1>
+          <h1>GORILLA MASCOT FOR PARTY IN AGRA</h1>
 
           <p className="hm-desc">
-            Make your parties, events and celebrations extra special with our
-            fun, interactive and high-energy gorilla mascot!
+            Make your birthday, wedding or any celebration extra special with our fun, interactive and high-energy party gorilla. Gorilla dance, mascot entertainment and DJ vibes, all in one place.
           </p>
 
           <div className="hm-btns">
