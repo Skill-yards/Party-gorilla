@@ -15,8 +15,8 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-import WhatsAppCTA from "../components/WhatsAppCTA";
-import CallCTA from "../components/CallCTA";
+import WhatsAppCTA from "../Components/WhatsAppCTA";
+import CallCTA from "../Components/CallCTA";
 import contactImage from "../assets/cool_gorilla.webp";
 import { phoneNumber } from "../Contact_details.js";
 import { email } from "../Contact_details.js";

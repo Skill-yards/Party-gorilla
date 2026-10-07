@@ -5,8 +5,8 @@
 
 import {useInView} from 'react-intersection-observer';
 
-import WhatsAppCTA from "../components/WhatsAppCTA";
-import CallCTA from "../components/CallCTA";
+import WhatsAppCTA from "../Components/WhatsAppCTA";
+import CallCTA from "../Components/CallCTA";
 
 import heroImage from "../assets/gorilla_dj_package.webp";
 
