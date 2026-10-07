@@ -23,6 +23,8 @@ The website showcases gorilla entertainment, event services, decorations, DJ sou
 - 🧭 Responsive navigation bar
 
 - ✨ Scroll-based animations
+
+
 - 🎨 Centralized CSS color variables
 - ♻️ Reusable React components
 - 🔁 Dynamic rendering using `.map()`
