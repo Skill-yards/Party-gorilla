@@ -84,7 +84,7 @@ const Footer = () => {
 
               <div className="ft-bottom">
                   <span>© {new Date().getFullYear()} DJ Gorila. All rights reserved.</span>
-                  <span>Book your date early, slots fill fast.</span>
+                  <span>Powered by <a href="https://www.skillyards.in/" className='text-yellow-400 hover:text-blue-600'>Skillyards.</a> </span>
               </div>
           </footer>
     </div>

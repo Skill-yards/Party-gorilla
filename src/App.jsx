@@ -1,18 +1,3 @@
-// // import Packages from "./Pages/Packages";
-// // import Contact from "./Pages/Contact";
-// import About from "./Pages/About";
-// const App = () => {
-//   return (
-//     <div>
-//      {/* <Packages/>
-//      <Contact/> */}
-//      <About/>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

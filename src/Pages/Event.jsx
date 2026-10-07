@@ -6,42 +6,48 @@ const events = [
         id: 'wedding',
         icon: 'ri-heart-3-fill',
         tag: 'Wedding Party',
-        title: 'Make your shaadi unforgettable',
+        title: 'Make your shaadi ',
+        twotitle:'unforgettable',
         text: 'From the baraat to the reception, our high-energy gorilla mascot brings smiles to every guest, young and old. Dance, photos and pure masti, all in one entry.',
         points: [
             'Grand entry for baraat and reception',
             'Photo moments with family and guests',
             'Dance with the bride, groom and kids',
         ],
-        video: 'YOUR_WEDDING_VIDEO_ID',
+        alt: 'DJ performing for a dancing crowd under party lights at an event in Agra',
+        img: 'imageTwo.webp',
         reverse: false,
     },
     {
         id: 'birthday',
         icon: 'ri-cake-3-fill',
         tag: 'Birthday Party',
-        title: 'Birthday fun kids will remember',
+        title: 'Birthday fun kids will ',
+        twotitle: 'remember',
         text: 'Turn your child\'s birthday into a mini carnival. Games, dance, cake-cutting and high-fives with a mascot every kid wants to meet.',
         points: [
             'Fun games and dance for all ages',
             'Special cake-cutting moment',
             'Safe, friendly and kid approved',
         ],
-        video: 'YOUR_BIRTHDAY_VIDEO_ID',
+        alt: 'DJ performing for a dancing crowd under party lights at an event in Agra',
+        img: 'image21.webp',
         reverse: true,
     },
     {
         id: 'other',
         icon: 'ri-sparkling-2-fill',
         tag: 'Other Events',
-        title: 'Every celebration needs some vibe',
-        text: 'Anniversary, school function, shop opening, society event or corporate fun day. We adapt the performance to your crowd and your theme.',
+        title: 'Every celebration needs ',
+        twotitle: 'some vibe',
+        text: 'Anniversary, school function, shop opening, society event or corporate fun day. Our DJ, lighting and party mascots, including a party gorilla, adapt the performance to your crowd and your theme. Planning an event in Agra? We bring the energy.',
         points: [
             'Anniversary and house parties',
             'Shop openings and brand events',
             'School and society functions',
         ],
-        video: 'YOUR_OTHER_VIDEO_ID',
+        alt: 'DJ performing for a dancing crowd under party lights at an event in Agra',
+        img:'image22.webp',
         reverse: false,
     },
 ]
@@ -63,7 +69,7 @@ const Events = () => {
                                 <i className={e.icon}></i>
                                 {e.tag}
                             </span>
-                            <h3>{e.title}</h3>
+                            <h3>{e.title}<span className='twotitle'>{e.twotitle}</span></h3>
                             <p className="ev-text">{e.text}</p>
 
                             <ul className="ev-points">
@@ -83,13 +89,7 @@ const Events = () => {
                         {/* Video */}
                         <div className="ev-video">
                             <div className="ev-frame">
-                                <iframe
-                                    src={`https://www.youtube.com/embed/${e.video}`}
-                                    title={e.tag}
-                                    loading="lazy"
-                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                ></iframe>
+                                <img src={e.img} alt={e.alt} />
                             </div>
                         </div>
                     </div>
