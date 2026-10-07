@@ -3,11 +3,16 @@ import babel from '@rolldown/plugin-babel'
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
-    tailwindcss()
+    tailwindcss(),
   ],
+  build: {
+    sourcemap: false,
+    target: 'es2020',
+    chunkSizeWarningLimit: 1000,
+  },
 })

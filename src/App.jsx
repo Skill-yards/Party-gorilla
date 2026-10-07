@@ -13,19 +13,23 @@ import Packages from "./Pages/Packages";
 import Contact from "./Pages/Contact";
 import Gallery from "./Pages/Gallery";
 import Footer from "./Pages/Footer";
+import ErrorBoundary from "./components/ErrorBoundary";
+import NotFound from "./Pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
-    
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/package" element={<Packages />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery />} />
-      </Routes>
-      <Footer/>
+      <ErrorBoundary>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/package" element={<Packages />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </ErrorBoundary>
     </BrowserRouter>
   );
 }
