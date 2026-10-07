@@ -7,8 +7,8 @@ export default defineConfig({
   base: './',
   plugins: [
     react(),
-    babel({ presets: [reactCompilerPreset()] }),
     tailwindcss(),
+    babel({ presets: [reactCompilerPreset()] })
   ],
   build: {
     sourcemap: false,

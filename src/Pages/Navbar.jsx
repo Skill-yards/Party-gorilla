@@ -40,8 +40,8 @@ const Nav = () => {
             />
 
             <span className="hm-lg-name">
-              <span className="hm-dj">DJ</span>
-              <span className="hm-gorila">Gorila</span>
+              <span className="hm-dj">aryan Abhishek </span>
+              <span className="hm-gorila">Dj & lighting</span>
             </span>
           </div>
 
