@@ -4,6 +4,7 @@
 
 
 import './Packages.css'
+import { Link } from 'react-router-dom'
 
 const services = [
     {
@@ -61,9 +62,9 @@ const Service = () => {
                     ))}
                 </div>
 
-                <a href="/package" className="pk-btn">
+                <Link to = "/package" className="pk-btn">
                     Explore our packages <i className="ri-arrow-right-line"></i>
-                </a>
+                </Link>
             </section>
 
             <section className="gl-section">
