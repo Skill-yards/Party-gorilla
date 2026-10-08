@@ -61,7 +61,7 @@ const Service = () => {
                     ))}
                 </div>
 
-                <a href="/package" className="pk-btn">
+                <a href="/packages" className="pk-btn">
                     Explore our packages <i className="ri-arrow-right-line"></i>
                 </a>
             </section>
